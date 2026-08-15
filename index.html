@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+</head>
+<body>
+
+
+
+  <h2 class="title">SPLI TTER</h2>
+<main class="calculator">
+  
+  <!-- main section -->
+  
+  <form class="main-section" action="">
+  <!-- first section -->
+  <div class="insert">
+    <label for="scree">
+      Bill
+    </label>
+  <div id="cont-input1"  class="container__input">
+    <input id="input-bill" type="number" placeholder="0">
+    <img src="./images/icon-dollar.svg" alt="">
+  </div>  
+  </div>
+
+    <!-- grid layout -->
+     <div class="second-section">
+
+       <label for="">
+        Select Tip %
+       </label>
+      <div class="grid-layout">
+      <input class="btn" type="button" value="5%">
+      <input class="btn" type="button" value="10%">
+      <input class="btn" type="button" value="15%">
+      <input class="btn" type="button" value="25%">
+      <input class="btn" type="button" value="50%">
+      <input class="btn" id="custom" type="button" value="Custom">
+      </div>
+     </div>
+    
+    <!--footer  section  -->
+  <div class="insert"> 
+    <div class="text-footer">
+      <label for="">
+      Number of People
+    </label>
+    <span class="error">Can't be 0</span>
+    
+    </div>
+   
+    <div id="cont-input2" class="container__input">
+    <input id="input-people"  type="number" placeholder="0" >
+    <img src="./images/icon-person.svg" alt="">  
+    </div>
+    
+  </div>
+  </form>
+  
+<!-- aside section -->
+ <section class="aside-section">
+  <div class="text-part">
+    <div class="flex-layout">
+      <div >
+         <h4>Tip Amount</h4>
+          <p class="grey-400">/ person</p>
+      </div>
+     
+      <div >
+          <h2 id="tip" class="amount">$0.00</h2>
+     </div>
+    </div>
+  
+  
+    <div class="flex-layout">
+      <div >
+        <h4>Total</h4>
+        <p class="grey-400">/ person</p> 
+      </div>
+      <div >
+        <h2 id="total-bill" class="amount">$0.00</h2>
+      </div>
+  </div>
+  </div>
+    <button id="btn-reset" class="reset">Reset</button>
+</section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
